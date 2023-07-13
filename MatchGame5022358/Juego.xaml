@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGame5022358.Juego"
+             Title="Juego">
+     <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+         <!--#Creamos un Label para el tiempo del juego -->
+        <Label
+            Text="Time"
+            FontFamily="Pixelfy Variable"
+            HorizontalOptions="Start"
+            VerticalOptions="End"/>
+         
+         <!--#Creamos un label para el contador -->
+        <Label
+            Text="0:000"
+            FontFamily="Pixelfy Variable"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            x:Name="tiempo"
+            />
+
+         <!--#Creamos un boton para comenzar el juego -->
+        <Button 
+           Text="comenzar"
+            BackgroundColor="DarkRed"
+            TextColor="White"
+            HeightRequest="40"
+            WidthRequest="300"
+            Clicked="Button_Clicked_1"
+            x:Name="startsStopButton"
+            />
+        <!--#Creamos un boton para comenzar un nuevo juego-->
+        <Button 
+                Text="Nuevo Juego"
+                BackgroundColor="DarkGreen"
+                TextColor="White"
+                HeightRequest="40"
+                WidthRequest="300"
+                HorizontalOptions="Center"
+                x:Name="btnReset"
+                Clicked="btnReset_Clicked"
+                />
+            
+            <!--#Creamos un grid y botones para poder hacer el juego en columnas y filas -->
+            <Grid x:Name="Grid1" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            <Button Text="?" FontSize="26" Margin="4" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Column="1" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Column="2" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Column="3" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="1" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="2" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="2" Grid.Column="3" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="3" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"/>
+            <Button Text="?" FontSize="26" Margin="4" Grid.Row="3" Grid.Column="3" Clicked="Button_Clicked"/>
+
+            </Grid>
+        <Button 
+            Text="Salir"
+            BackgroundColor="OrangeRed"
+            TextColor="White"
+            HeightRequest="40"
+            WidthRequest="300"
+            Clicked="Button_Clicked_2"/>
+    </VerticalStackLayout>
+</ContentPage>

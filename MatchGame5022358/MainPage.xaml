@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGame5022358.MainPage"
+             Shell.NavBarIsVisible="False"
+             Title="Match Game Indel">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--#Creamos un Label para el titulo del Juego -->
+                <Label
+                Text="Game Puzzel" 
+                x:Name="lblPrincipal" 
+                FontSize="Title"
+                Margin="40"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                />
+            <!--#Ponemos una Imagen con referencia-->
+            <Image Source="game.png" 
+                   WidthRequest="300"
+                   HeightRequest="200"
+                   Margin="20"/>
+            <!--#Creamos un boton para comenzar el juego -->
+            <Button 
+                Text="Star"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="200"
+                Margin="20"
+                BackgroundColor="DarkViolet"
+                TextColor="White"
+                FontSize="20"
+                Clicked="Button_Clicked_1"/>
+
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
